@@ -37,9 +37,9 @@ const threadSchema = new mongoose.Schema({
   },
 });
 
-threadSchema.pre("save", function (next) {
+threadSchema.pre("save", async function () {
   this.updatedAt = Date.now();
-  next();
 });
+const Thread = mongoose.model("Thread", threadSchema);
 
-export default mongoose.model("Thread", threadSchema);
+export default Thread;
