@@ -1,0 +1,112 @@
+.sidebar {
+  width: 270px;
+  height: 100vh;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* Logo section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo img {
+  width: 42px;
+  height: 42px;
+}
+
+/* Gradient brand text */
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa, #fb923c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* New Chat Button */
+.NewChat {
+  margin: 18px 0;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa, #fb923c);
+  color: white;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.NewChat:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
+}
+
+/* Chat List */
+.chatList {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.chatList li {
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chatList li:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Auth buttons */
+.authButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.signup {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signup:hover {
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+.commingSOON {
+  padding: 20px;
+  margin: 10px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #fb923c;
+  border-radius: 20px;
+}

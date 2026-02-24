@@ -1,23 +1,20 @@
-import { useState } from "react";
+import React from "react";
+import style from "./InputBox.module.css";
 
-function InputBox({ onSend }) {
-  const [input, setInput] = useState("");
-
-  const handleSend = () => {
-    if (!input.trim()) return;
-    onSend(input);
-    setInput("");
-  };
-
+function InputBox() {
   return (
-    <div className="input-box">
-      <input
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Send a message..."
-      />
-      <button onClick={handleSend}>Send</button>
+    <div className={style.inputBox}>
+      <div className={style.toolbar}></div>
+      <div className={style.inputRow}>
+        <input className={style.input} placeholder="Send a message..." />
+        <button className={style.sendBtn}>Send</button>
+      </div>
+
+      <div className={style.footer}>
+        <p>ChatNova can make mistakes. Project by Aditya</p>
+      </div>
     </div>
   );
 }
+
 export default InputBox;

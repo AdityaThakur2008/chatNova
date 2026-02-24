@@ -1,0 +1,58 @@
+/* Outer container */
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 0;
+}
+
+/* Toolbar (future icons area) */
+.toolbar {
+  height: 28px;
+}
+
+/* Input row container */
+.inputRow {
+  display: flex;
+  gap: 10px;
+  background: #020617;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Input field */
+.input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1e293b;
+  color: white;
+  font-size: 14px;
+}
+
+/* Send button */
+.sendBtn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sendBtn:hover {
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Footer text */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #64748b;
+}

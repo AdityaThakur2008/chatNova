@@ -1,0 +1,42 @@
+/* Container */
+.chatContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+}
+
+/* ===== NAVBAR ===== */
+.chatNavbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(2, 6, 23, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+.modelName {
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa, #fb923c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navBtn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+  color: white;
+  font-weight: 500;
+}
+
+.navBtn:hover {
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+}
+
