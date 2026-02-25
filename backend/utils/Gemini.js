@@ -21,8 +21,9 @@ export default async function chatWithGemini(message) {
         },
       },
     );
-
+    console.log("Gemini Response:", response.data);
     return response.data.candidates[0].content.parts[0].text;
+    cons;
   } catch (error) {
     console.error("Error:", error.response?.data || error.message);
   }

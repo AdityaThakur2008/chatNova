@@ -10,7 +10,7 @@ const router = express.Router();
 
 router.get("/threads", getAllThreads);
 router.get("/threads/:threadId", getAllMessages);
-router.post("/threads", createMessage);
+router.post("/new/threads", createMessage);
 router.delete("/threads/:threadId", DeleteThread);
 
 

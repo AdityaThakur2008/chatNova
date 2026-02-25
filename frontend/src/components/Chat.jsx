@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Chat.module.css";
-import InputBox from "./InputBox";
 
 export default function Chat() {
   return (
@@ -17,8 +16,6 @@ export default function Chat() {
           Hello 👋 I’m your AI assistant. How can I help you today?
         </div>
       </div>
-
-      <InputBox />
     </div>
   );
 }

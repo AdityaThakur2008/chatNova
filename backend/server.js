@@ -10,7 +10,6 @@ app.use(express.json());
 app.use(cors());
 const PORT = process.env.PORT || 8080;
 
-
 app.use("/", threadRouter);
 
 const Main = async () => {
